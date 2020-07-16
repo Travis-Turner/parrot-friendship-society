@@ -8,7 +8,7 @@ function PageNotFound () {
        404 - Page Not Found!
       </h3>
       <p>
-        Uh oh! There's nothing here! 🥺
+       We don't want to ruffle your feathers, but this page doesn't exist!
       </p>
     </div>
   )

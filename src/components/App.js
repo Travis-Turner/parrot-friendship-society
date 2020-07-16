@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 import Friends from './Friends';
 import Friend from './Friend';
+import PageNotFound from './PageNotFound';
 import serverData from '../serverData';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path='/friends/:id'>
             <Friend serverData={serverData} />
+          </Route>
+          <Route path='*'>
+            <PageNotFound />
           </Route>
         </Switch>
       </div>
