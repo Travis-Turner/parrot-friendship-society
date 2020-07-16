@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 import Friends from './Friends';
 import Friend from './Friend';
+import Dashboard from './Dashboard';
 import PageNotFound from './PageNotFound';
 import serverData from '../serverData';
 
@@ -17,6 +18,9 @@ function App() {
           </ul>
         </nav>
         <Switch>
+          <Route exact path='/'>
+            <Dashboard />
+          </Route>
           <Route exact path='/friends'>
             <Friends serverData={serverData} />
           </Route>
