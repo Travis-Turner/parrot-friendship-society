@@ -11,12 +11,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className='App'>
-        <nav>
-          <ul>
-            <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/friends'>Friends</NavLink></li>
-          </ul>
-        </nav>
+        <header className="header">
+          <NavLink to='/' className="header__logo">Parrot Friendship Society</NavLink>
+          <nav className="menu">
+            <ul className="menu__list">
+              <li className="menu__list-item"><NavLink className="menu__link" to='/friends'>Friends</NavLink></li>
+            </ul>
+          </nav>
+        </header>
         <Switch>
           <Route exact path='/'>
             <Dashboard />

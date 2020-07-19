@@ -2,7 +2,9 @@ const serverData = {
   "friends": [
     {
       "name": "Bill",
-			"id": "0",
+      "id": "0",
+      "profilePicDark": "/profile-images/bill-dark.png",
+      "profilePicLight": "/profile-images/bill-light.png",
       "location": "Boise, Idaho",
       "favBirdQuote": "The early bird gets the worm",
       "parrotsOwned": [
@@ -24,7 +26,9 @@ const serverData = {
     },
     {
       "name": "Mary",
-			"id": "1",
+      "id": "1",
+      "profilePicDark": "/profile-images/mary-dark.png",
+      "profilePicLight": "/profile-images/mary-light.png",
       "location": "London, England",
       "favBirdQuote": "A bird in the hand is worth two in the bush",
       "parrotsOwned": [
