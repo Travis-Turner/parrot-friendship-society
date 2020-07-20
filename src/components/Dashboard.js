@@ -1,10 +1,12 @@
 import React from 'react';
+import './Dashboard.css';
+import Birds from '../images/birds.svg';
 
 function Dashboard() {
   
   return (
-      <div>
-        <p>image should go here</p>
+      <div className="dashboard">
+        <img src={Birds} alt=""/>
       </div>
   );
 }
